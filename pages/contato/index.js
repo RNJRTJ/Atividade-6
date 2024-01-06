@@ -14,7 +14,7 @@ const Contato = () => {
 
   const handleAddContato = () => {
     axios
-      .post("http://localhost:8080/contatos", newContato)
+      .post("http://localhost:8080/api/Contato", newContato)
       .then((response) => {
         router.push("/contato/editarContato");
       })

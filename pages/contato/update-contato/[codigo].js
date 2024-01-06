@@ -12,7 +12,7 @@ const UpadteContato = () => {
   useEffect(() => {
     // Faça uma chamada GET para a API para obter detalhes do cliente a ser atualizado
     axios
-      .get("http://localhost:8080/contatos/" + newContato.id, newContato)
+      .get("http://localhost:8080/api/Contato" + newContato.id, newContato)
       .then((response) => {
         setNewContato(response.data);      
       })
@@ -27,7 +27,7 @@ const UpadteContato = () => {
  
   const handleUpdateContato = () => {
     axios
-      .put("http://localhost:8080/contatos/" + newContato.id, newContato)
+      .put("http://localhost:8080/api/Contato" + newContato.id, newContato)
       .then((response) => {
         router.push('/contato/editarContato');    
       })

@@ -26,6 +26,8 @@ const Navbar = () => {
                   <Link className="text-decoration-none" href="/promocoe">Promoção</Link>
                   <Link className="text-decoration-none" href="/destino">Destino</Link>
                   <Link className="text-decoration-none" href="/contato">Contato</Link>
+                  <Link className="text-decoration-none" href="/categoria">Categoria</Link>
+                  <Link className="text-decoration-none" href="/produto">Produto</Link>
                 </ul>
             </div>
             </div>

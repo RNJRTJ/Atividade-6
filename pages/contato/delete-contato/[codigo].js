@@ -13,7 +13,7 @@ const DeleteContato = () => {
   const handleDeleteContato = () => {
  
     axios
-      .delete("http://localhost:8080/contatos/" + newContato)
+      .delete("http://localhost:8080/api/Contato" + newContato)
       .then(() => {
         router.push("/contato/editarContato");
       })

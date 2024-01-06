@@ -11,7 +11,7 @@ const editarContato = () => {
   useEffect(() => {
     // Faça uma chamada GET para a API Spring Boot
     axios
-      .get("http://localhost:8080/contatos", newContato)
+      .get("http://localhost:8080/api/Contato", newContato)
       .then((response) => {
         setNewContato(response.data);
       })
